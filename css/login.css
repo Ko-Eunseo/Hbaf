@@ -1,0 +1,50 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #4E2F01;
+  }
+  body {
+    width: 100%;
+    background-color: #523d1e;
+    display: flex;
+  }
+  #loginpage {
+    /* 가운데정렬 */
+    margin: 20vh auto;
+  }
+  #login {
+    border-radius: 30px;
+    display: inline-block;
+    padding: 50px;
+    /* text-align: center; 모두 가운데정렬 */
+    background-color: #F0EDE6;
+    width: 500px;
+  }
+  #login > .loginBox {
+    padding: 50px;
+  }
+  #login > .loginBox > h2 {
+    margin-bottom: 20px;
+    border-bottom: 4px solid #FEDA00;
+    /* display: inline-block; */
+    text-align: center;
+  }
+
+  .inputBox input {
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    border-radius: 20px;
+    margin: 10px 0;
+    border: none;
+  }
+  .inputBox input[type="submit"] {
+    background-color: #F9A71A;
+  }
+  .inputBox input[type="submit"]:hover {
+    background-color: #f9981a;
+  }

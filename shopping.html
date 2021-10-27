@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./library/fontawesome-free-5.15.4-web/css/all.min.css">
+  <link rel="stylesheet" href="./css/swiper.css">
+  <link rel="stylesheet" href="./css/shopping.css">
+  <title>Hbaf shopping</title>
+</head>
+<body>
+    <header>
+      <div id="logo">
+        <a href="./index.html"><h1 class="logoh1">HBAF</h1></a>
+      </div>
+      <div id="userInfo">
+        <a class="circle mypage" href="#"><i class="fas fa-user fa-2x"></i></a>
+        <a class="circle cart" href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+      </div>
+      <div class="userPage"></div>
+      <div class="cartBox"></div>
+    </header>
+    <main>
+      <div class="productMainPic">
+        <img src="./images/product/corn.png" alt="">
+      </div>
+    </main>
+    <aside>
+      <div class="productInfo">
+        <a class="close closeInfo" href="#">
+          <i class="fas fa-toggle-on fa-2x"></i>
+          <i style="display: none;" class="fas fa-toggle-off fa-2x"></i>
+        </a>
+        <div class="buying">
+          <div class="productName">
+            <h2>군옥수수맛아몬드</h2>
+            <div class="likenShare">
+              <a class="circle like" href=""><i class="fas fa-heart fa-lg"></i></a>
+              <a class="circle share" href=""><i class="fas fa-share-alt fa-lg"></i></a>
+            </div>
+          </div>
+          <form action="index.html">
+            <p>3500<span>원</span></p>
+            <p>배송비: <span>3000원</span></p>
+            <p>수량: 
+              <label for="number"></label>
+              <input type="number" id="number" min="1" value="1">
+            </p>
+            <div class="inputBox button">
+              <input type="submit" value="구매하기">
+              <input class="inCart" type="submit" value="담기">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="recommand">
+        <a class="close closeRecom" href="#">
+          <i class="fas fa-toggle-on fa-2x"></i>
+          <i style="display: none;" class="fas fa-toggle-off fa-2x"></i>
+        </a>
+        <div class="recommandBox swiper-container">
+          <h3>추천상품</h3>
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide"><a href=""><img src="./images/product/chick.png" alt=""></a></li>
+            <li class="swiper-slide"><a href=""><img src="./images/product/corn.png" alt=""></a></li>
+            <li class="swiper-slide"><a href=""><img src="./images/product/dduck.png" alt=""></a></li>
+            <li class="swiper-slide"><a href=""><img src="./images/product/garlic.png" alt=""></a></li>
+            <li class="swiper-slide"><a href=""><img src="./images/product/honey.png" alt=""></a></li>
+            <li class="swiper-slide"><a href=""><img src="./images/product/mayo.png" alt=""></a></li>
+            <li class="swiper-slide"><a href=""><img src="./images/product/onionColor.png" alt=""></a></li>
+            <li class="swiper-slide"><a href=""><img src="./images/product/seaweed.png" alt=""></a></li>
+            <li class="swiper-slide"><a href=""><img src="./images/product/spicy.png" alt=""></a></li>
+            <li class="swiper-slide"><a href=""><img src="./images/product/tiramisu.png" alt=""></a></li>
+            <li class="swiper-slide"><a href=""><img src="./images/product/wasa.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <section class="detail">
+      <img src="./images/detail/corn.png" alt="">
+    </section>
+    <footer>
+      <div>copyrightⓒeunseogo</div>
+    </footer>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/shopping.js"></script>
+</body>
+</html>
