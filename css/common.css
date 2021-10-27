@@ -255,6 +255,7 @@ section.event {
 #product .swiper-pagination-bullet {
   border: 3px solid #F9A71A;
 }
+
 /* active cursor */
 #product > div > div.swiper-container.total > div > span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 12px;
