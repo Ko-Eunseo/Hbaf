@@ -72,7 +72,6 @@ $('.toggle').click(function(){
     $('#gnb > ul').addClass('dropdown'),
     $('#gnb > ul > li').addClass('dropdowncontent'),
     $('#gnb > ul > i.exit').css('display','block'),
-    $('main').css('display','none'),
     $('#gnb').css('display','inline-block'),
     $('header > nav > ul').css('left','30%');
   }
