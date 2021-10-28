@@ -30,26 +30,19 @@ header {
   position: relative;
   margin-left: 20px;
 }
-/* header anchor layout detail */
-#userInfo > a.mypage {
-  top: 3px;
+/* cart icon layout detail */
+.cart i {
+  padding-top: 10px;
 }
-.mypage.circle:nth-child(1):after {
-  transform: translate(-50%,-55%);
-}
-#userInfo > .cart.circle:nth-child(2) {
-  top: 5px;
-}
-.cart.circle:nth-child(2):after {
-  transform: translate(-45%,-60%);
-}
+
 /* main: product picture */
 main {
   background-color: white;
   color: black;
   width: 50vw;
   text-align: center;
-  padding-top: 30px;
+  /* seperate with header */
+  padding-top: 100px;
 }
 main > div.productMainPic > img {
   max-width: 100%;
