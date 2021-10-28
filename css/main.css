@@ -229,6 +229,10 @@ div.productLayout > ul {
   #login > a:last-of-type {
     display: inline;
   }
+  /* main cover ad 짤림 방지 */
+  #cover > ul {
+    margin-top: 70px;
+  }
   #gnb.dropdowncontainer {
     height: 50vh;
   }
@@ -332,11 +336,14 @@ div.productLayout > ul {
   header > nav#gnb {
     display: none;
   }
-  /* 메뉴토클버튼open */
+  /* 메뉴토글버튼open */
   #login > a.toggle {
     display: inline-block;
   }
-  
+  /* main cover ad 짤림 방지 */
+  #cover > ul {
+    margin-top: 70px;
+  }
   section:nth-child(3) > div:after {
     bottom: 0;
     background-position: bottom;
@@ -421,6 +428,11 @@ div.productLayout > ul {
   #login > a.toggle {
     display: inline-block;
   }
+  /* main cover ad 짤림 방지 */
+  #cover > ul {
+    margin-top: 70px;
+  }
+
   /* monToSunAd */
   #advertise {
     position: relative;
