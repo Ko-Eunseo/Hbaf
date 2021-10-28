@@ -152,6 +152,7 @@ section > div.product > nav.productNav > ul > li:last-child {
 .productLayout > ul > li {
   display: inline;
 }
+
 #newProduct .swiper-wrapper {
   display: block;
 }
