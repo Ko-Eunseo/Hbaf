@@ -21,18 +21,20 @@ header {
 }
 #userInfo {
   position: absolute;
-  top: 10px;
-  right: 0;
-  margin-right: 5%;
-  z-index: 3;
+  right: 5%;
+  top: 45%;
+  transform: translate(0%,-50%);
+  z-index: 5;
+  display: flex;
 }
 #userInfo > a {
+  margin: 0 15px;
   position: relative;
-  margin-left: 20px;
 }
-/* cart icon layout detail */
-.cart i {
-  padding-top: 10px;
+
+/* icon layout detail */
+.mypage i, .cart i {
+  padding-top: 5px;
 }
 
 /* main: product picture */
