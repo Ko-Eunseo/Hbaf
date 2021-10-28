@@ -270,10 +270,14 @@ div.productLayout > ul {
   #event {
     display: none;
   }
-  section > div.product:after {
+  section#product > div.product:after {
     display: none;
   }
-  section:nth-child(3) > div > .swiper-container {
+  section#product > div > div.swiper-button-prev,
+  section#product > div > div.swiper-button-next {
+  display: none;
+  }
+  section#product > div.product > .swiper-container {
     /* 슬라이드 1개씩 뜨게 바꾸기 */
     width: 100%;
   }
@@ -296,10 +300,7 @@ div.productLayout > ul {
     font-size: 14px;
   }
 
-  section:nth-child(3) > div > div.swiper-button-prev,
-  section:nth-child(3) > div > div.swiper-button-next {
-  display: none;
-  }
+
   
   /* newproduct footer와 분리 */
   .productLayout > ul {
@@ -325,7 +326,7 @@ div.productLayout > ul {
 
 
 
-/* 화면 너비 501~959px */
+/* 화면 너비 601~767px */
 @media screen and ( min-width:601px ) and ( max-width:767px ) {
   header {
     background-color: #F9A71A;
@@ -345,12 +346,12 @@ div.productLayout > ul {
   #cover > ul {
     margin-top: 70px;
   }
-  section:nth-child(3) > div:after {
-    bottom: 0;
+  section#product > div.product:after {
     background-position: bottom;
     background-size: 100vh;
     background-size: contain;
   }
+
   #monToSunAd > iframe {
     display: none;
   }
@@ -369,7 +370,7 @@ div.productLayout > ul {
     margin: 0;
   }
   /* monToSunAd */
-  section:nth-child(2) > div > #monToSunAd > iframe {
+  section#advertise > div > #monToSunAd > iframe {
     display: none;
   }
   #monToSunAd {
@@ -381,12 +382,12 @@ div.productLayout > ul {
   #advertise > #monToSunAd > h1 {
     text-align: left;
   }
-  section:nth-child(3) > div > .swiper-container {
+  section#product > div > .swiper-container {
     /* 슬라이드 1개씩 뜨게 */
     width: 100%;
   }
-  section:nth-child(3) > div > div.swiper-button-prev,
-  section:nth-child(3) > div > div.swiper-button-next {
+  section#product > div.product > div.swiper-button-prev,
+  section#product > div.product > div.swiper-button-next {
   display: none;
   }
 
@@ -413,7 +414,7 @@ div.productLayout > ul {
   }
 }
 
-/* 화면 너비 768~960px */
+/* 화면 너비 768~1100px */
 @media screen and (min-width:768px) and (max-width:1100px) {
   header {
     background-color: #F9A71A;
@@ -464,19 +465,13 @@ div.productLayout > ul {
   #advertise > #monToSunAd > h1 {
     text-align: left;
   }
-
-  section:nth-child(3) > div:after {
-    bottom: 0;
-    background-position: bottom;
-    background-size: 100vh;
-    background-size: contain;
-  }
-
   .productLayout > ul {
     top: 20vh;
   }
-
   #newProduct .swiper-wrapper {
     display: flex;
+  }
+  #newProduct img {
+    width: 80%;
   }
 }
