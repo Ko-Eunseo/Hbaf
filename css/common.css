@@ -129,7 +129,6 @@ header > nav > ul > li {
 #gnb > ul.dropdown > li:hover {
   background-color: #FED500;
   transition: 0.5s;
-  box-shadow: #F0EDE6;
 }
 
 /* login */

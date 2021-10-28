@@ -91,27 +91,31 @@ $('.search').click(function(){
   }
 });
 
+
 // toggle button avtive
 $('.toggle').click(function(){
   if($('#gnb').is(':visible')){
+    $('header').css('height','70px');
     $('#gnb').css('display','none'),
     $('#logo').css('margin-left','5%'),
     $('main').css('display','block');
-    $('header').css('height','70px'); //header높이 조정
   }
+
   else {
     $('#gnb').addClass('dropdowncontainer'),
     $('#gnb > ul').addClass('dropdown'),
     $('#gnb > ul > li').addClass('dropdowncontent'),
+    $('header').css('height','71px');
     $('main').css('display','none'),
     $('#gnb').css('display','inline-block'),
     $('header > nav > ul').css('left','30%');
-    $('header').css('height','100px'); //header~gnb사이 빈 공간 처리
   }
 });
 
-// 메뉴 선택시 닫기
-$('header > nav > ul > li').click(function(){
-  $('#gnb').css('display','none');
-  $('header').css('height','70px'); //header높이 조정
-});
+// 메뉴 클릭시 닫음
+if($('#gnb').is(':visible')){
+  $('#gnb > ul > li').click(function(){
+    $('.dropdowncontainer').css('display','none');
+    }
+  );
+}
