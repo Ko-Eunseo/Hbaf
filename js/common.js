@@ -1,4 +1,20 @@
-new Swiper('.cover', {
+//처음 비디오 실행시 비동기 현상으로 인한 재생안됨 방지
+var iframe = document.querySelectorAll("iframe[title=hbafAd]"); //title이 hbafAd인 iframe을 모두 불러옴 
+var player = new Vimeo.Player(iframe[0]);
+
+//비디오 로드
+player.loadVideo(520797296).then(function(id) {
+  //비디오 플레이 실행
+  player.play().then(function() {
+    
+  }).catch(function(error) {
+    //플레이가 제대로 안될시 다시 플레이
+    player.play();
+  });
+});
+
+
+var swiper1 = new Swiper('.cover', {
 	slidesPerView: 1,
   roop: true,
   pagination: {
@@ -9,7 +25,22 @@ new Swiper('.cover', {
   autoplay: false
 });
 
-new Swiper('.total', {
+//슬라이드가 바뀌었을때 동영상 재생 안됨 방지
+swiper1.on('slideChange', function () {
+  var swiperIdx = swiper1.activeIndex; //현재 슬라이드의 index번호를 구함
+  var iframe = document.querySelectorAll("iframe[title=hbafAd]"); //title이 hbafAd인 iframe을 모두 불러옴 
+  var player;
+
+  if (swiperIdx === 0) { // 첫번째 슬라이드 일때 첫번째 영상 재생
+    player = new Vimeo.Player(iframe[0]);
+  } else { //두번째 슬라이드 일때 두번째 영상 재생 
+    player = new Vimeo.Player(iframe[1]);
+  }
+
+  player.play(); //비디오 재생
+});
+
+var swiper2 = new Swiper('.total', {
   slidesPerView : 3, // 동시에 보여줄 슬라이드 갯수
 	slidesPerGroup : 3,
   centeredSlides: true,
@@ -29,7 +60,7 @@ new Swiper('.total', {
   autoplay: true
 });
 
-new Swiper('.event', {
+var swiper3 = new Swiper('.event', {
 	slidesPerView: 1,
 	loop: true,
   navigation: {
@@ -39,7 +70,7 @@ new Swiper('.event', {
   autoplay: true
 });
 
-new Swiper('.newProduct', {
+var swiper4 = new Swiper('.newProduct', {
   slidesPerView: 3,
   centeredSlides: true,
   spaceBetween: 20,
