@@ -97,22 +97,21 @@ $('.toggle').click(function(){
     $('#gnb').css('display','none'),
     $('#logo').css('margin-left','5%'),
     $('main').css('display','block');
+    $('header').css('height','70px'); //header높이 조정
   }
   else {
     $('#gnb').addClass('dropdowncontainer'),
     $('#gnb > ul').addClass('dropdown'),
     $('#gnb > ul > li').addClass('dropdowncontent'),
-    $('#gnb > ul > i.exit').css('display','block'),
     $('main').css('display','none'),
     $('#gnb').css('display','inline-block'),
     $('header > nav > ul').css('left','30%');
+    $('header').css('height','100px'); //header~gnb사이 빈 공간 처리
   }
 });
 
-// $('#gnb > ul.dropdown > li').click(function(){
-//   if($('.dropdowncontainer').is(':visible')){
-//     $('#gnb').css('display','none'),
-//     $('#logo').css('margin-left','5%'),
-//     $('main').css('display','block');
-//   }
-// });
+// 메뉴 선택시 닫기
+$('header > nav > ul > li').click(function(){
+  $('#gnb').css('display','none');
+  $('header').css('height','70px'); //header높이 조정
+});
