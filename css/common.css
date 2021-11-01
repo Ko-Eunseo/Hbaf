@@ -118,10 +118,12 @@ header li.bar:after {
 
 /* gnb hover */
 #gnb > ul > li:hover > a {
-  padding-bottom: 10px;
+  padding-bottom: 21px;
   border-bottom: 3px solid #F9A71A;
-  transition: border-width 0.5s ease-out;
-
+  color: #F9A71A;
+}
+#login a:hover {
+  color: #F9A71A;
 }
 
 /* gnb dropdown */
