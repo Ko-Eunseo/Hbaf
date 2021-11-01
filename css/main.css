@@ -121,7 +121,7 @@ section > div.product {
 
 section > div.product > .swiper-container {
   max-width: 1200px;
-  top: 180px;
+  /* top: 150px; */
 }
 
 /* list layout */
@@ -160,6 +160,7 @@ section > div.product > nav.productNav > ul > li:last-child {
 /* productPic hover effect */
 #product > div.product > .swiper-container {
   overflow: visible;
+  padding-top: 55px;
 }
 #product > .product > .total > ul > li > a:hover {
   padding: 20px 0;
@@ -172,7 +173,7 @@ section > div.product > nav.productNav > ul > li:last-child {
 
 #product > .product > .total > ul {
   position: relative;
-  top: -40px;
+  /* top: -40px; */
 }
 
 #newProduct > ul.scroll > li > a:hover > .newProductPic,
@@ -213,22 +214,29 @@ div.productLayout > ul {
 .swiper-scrollbar {
   background-color: #9FBE25;
 }
+@media screen and (min-width: 320px) and (max-width:400px) {
+  /* monToSunAd */
+  section > #monToSunAd > iframe {
+    width: 100%;
+    float: none;
+    height: auto;
+  }  
+}
 
-/* 화면 너비 500px */
+/* 화면 너비 600px */
 @media screen and (max-width:600px) {
-  body {
-    min-width: 450px;
-  }
   /* h1 position */
   .listPosition {
     left: 30vw;
   }
-
   header {
     background-color: #F9A71A;
   }
   #login > a:last-of-type {
     display: inline;
+  }
+  header li.bar:after {
+    content: none;
   }
   /* main cover ad 짤림 방지 */
   #cover > ul {
@@ -236,12 +244,6 @@ div.productLayout > ul {
   }
   #gnb.dropdowncontainer {
     height: 50vh;
-  }
-  .dropdown > .dropdowncontent {
-    font-size: 16px;
-  }
-  div.product > nav.productNav > ul {
-    padding-left: 10vw;
   }
   /* 메인광고 */
   .viemoWraper {
@@ -258,7 +260,6 @@ div.productLayout > ul {
   /* monToSunAd */
   section > #monToSunAd > iframe {
     width: 100%;
-    margin: 10px;
     float: none;
   }  
   #monToSunAd > h1 {
@@ -281,6 +282,9 @@ div.productLayout > ul {
     /* 슬라이드 1개씩 뜨게 바꾸기 */
     width: 100%;
   }
+  .total p, #newProduct > ul > li > a > div > p {
+    font-size: 1em;
+  }
   /* 위젯 */
   #advertise {
     position: relative;
@@ -299,12 +303,14 @@ div.productLayout > ul {
   #advertise > div.widget > a > div > p {
     font-size: 14px;
   }
-
+  #product {
+    padding: 50px 0;
+  }
 
   
   /* newproduct footer와 분리 */
   .productLayout > ul {
-    top: 10vh;
+    top: 5vh;
   }
   /* font */
   h1 {
@@ -324,8 +330,6 @@ div.productLayout > ul {
   }
 }
 
-
-
 /* 화면 너비 601~767px */
 @media screen and ( min-width:601px ) and ( max-width:767px ) {
   header {
@@ -333,6 +337,9 @@ div.productLayout > ul {
   }
   #login > a:last-of-type {
     display: inline;
+  }
+  header li.bar:after {
+    content: none;
   }
   /* gnb toggle */
   header > nav#gnb {
@@ -347,7 +354,6 @@ div.productLayout > ul {
     margin-top: 70px;
   }
   section#product > div.product:after {
-    background-position: bottom;
     background-size: 100vh;
     background-size: contain;
   }
@@ -421,6 +427,9 @@ div.productLayout > ul {
   }
   #login > a:last-of-type {
     display: inline;
+  }
+  header li.bar:after {
+    content: none;
   }
   /* gnb toggle */
   header > nav#gnb {

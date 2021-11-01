@@ -36,6 +36,9 @@ p, li {
 section {
   padding: 10% 0;
 }
+.event {
+  padding-top: 0;
+}
 
 /* first section */
 .section:first-child {
@@ -88,14 +91,37 @@ header > nav > ul {
   /* 기준점 가운데 */
   transform: translate(-50%,-50%);
   z-index: 5;
+  text-align: center;
+  display: inline-block;
 }
 
 header > nav > ul > li {
-  /* font-size: 2.3rem; */
   font-weight: 500;
 /* 메뉴 가로정렬 */
   display: inline;
-  padding-right: 50px;
+  margin: 0 auto;
+}
+
+header li.bar:after {
+  content: '';
+  display: inline-block;
+  top: 50%;
+  right: 50px;
+  height: 10px;
+  width: 10px;
+  border-right: 1px solid #F0EDE6;
+  transform: translate(-50%,-50%);
+
+  padding: 0 30px;
+  /* position: absolute; */
+}
+
+/* gnb hover */
+#gnb > ul > li:hover > a {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #F9A71A;
+  transition: border-width 0.5s ease-out;
+
 }
 
 /* gnb dropdown */
@@ -115,7 +141,7 @@ header > nav > ul > li {
 }
 .dropdown > .dropdowncontent {
   display: block;
-  font-size: 2em;
+  font-size: 30px;
 }
 #gnb > ul.dropdown > li {
   padding: 0 20px;
@@ -213,7 +239,7 @@ main > ul > li > div > iframe {
 
 /* 섹션높이 고정 */
 #product {
-  height: 50vh;
+  padding: 100px 0;
 }
 
 /* common product picture */
@@ -235,11 +261,10 @@ section.event {
 #newProduct .swiper-wrapper {
   cursor: grab;
 }
-.listPosition {
-  position: absolute;
-  top: 10vw;
-  left: 50%;
-  transform: translate(-50%,-50%);
+
+#product > div > nav.listPosition > ul {
+  text-align: center;
+  display: inline-block;
 }
 
 /* product pagination */
@@ -248,7 +273,7 @@ section.event {
 
 #product .swiper-container-horizontal > .swiper-pagination-bullets {
   top: auto;
-  bottom: 0;
+  bottom: -30px;
   left: 0;
 }
 .swiper-pagination.totalPage {
@@ -269,7 +294,9 @@ section.event {
 .swiper-pagination.totalPage {
   position: absolute;
 }
-
+li.swiper-slide {
+  z-index: 10;
+}
 /* slide button */
 .swiper-button-prev,
 .swiper-button-next{
@@ -293,6 +320,10 @@ section.event {
 .swiper-button-prev:after,
 .swiper-button-next:after {
   display: none;
+}
+/* newproduct */
+#newProduct > div {
+  text-align: center;
 }
 
 /* event */
