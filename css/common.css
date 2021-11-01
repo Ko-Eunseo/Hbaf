@@ -27,9 +27,11 @@ html{
 h1 {
   font-size: 3em;
 }
-
-p, li {
+p {
   font-size: 1.5em;
+}
+li {
+  font-size: 1.2em;
 }
 
 /* section padding */
@@ -118,7 +120,7 @@ header li.bar:after {
 
 /* gnb hover */
 #gnb > ul > li:hover > a {
-  padding-bottom: 21px;
+  padding-bottom: 25px;
   border-bottom: 3px solid #F9A71A;
   color: #F9A71A;
 }
@@ -327,6 +329,7 @@ li.swiper-slide {
 #newProduct > div {
   text-align: center;
 }
+
 
 /* event */
 section.event > ul > li > a > img {
