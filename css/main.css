@@ -238,6 +238,13 @@ div.productLayout > ul {
   header li.bar:after {
     content: none;
   }
+  /* gnb hover */
+  #gnb > ul > li:hover > a {
+    border-bottom: none;
+  }
+  #login a:hover {
+    color: white;
+  }
   /* main cover ad 짤림 방지 */
   #cover > ul {
     margin-top: 70px;
@@ -345,6 +352,13 @@ div.productLayout > ul {
   header > nav#gnb {
     display: none;
   }
+  /* gnb hover */
+  #gnb > ul > li:hover > a {
+    border-bottom: none;
+  }
+  #login a:hover {
+    color: white;
+  }
   /* 메뉴토글버튼open */
   #login > a.toggle {
     display: inline-block;
@@ -430,6 +444,13 @@ div.productLayout > ul {
   }
   header li.bar:after {
     content: none;
+  }
+  /* gnb hover */
+  #gnb > ul > li:hover > a {
+    border-bottom: none;
+  }
+  #login a:hover {
+    color: white;
   }
   /* gnb toggle */
   header > nav#gnb {
