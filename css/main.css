@@ -226,9 +226,6 @@ div.productLayout > ul {
   position: relative;
 }
 #newProduct > ul > li > p {
-  display: none;
-}
-#newProduct > ul > li > p {
   background-color: #F0EDE6;
   display: inline-block;
   border-radius: 0 0 20px 20px;
