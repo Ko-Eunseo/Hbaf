@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 /* 초기화 */
-body, h1, ul, li, a, p, span {
+body, h1, h2, h3, h4, ul, li, a, p, span {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -340,8 +340,32 @@ section.event > ul > li > a > img {
 footer {
   background-color: black;
   color: white;
-  height: 200px;
-  text-align: center;
+  padding: 50px;
+}
+
+footer > .hbaf_footTop {
+  display: inline-block;
+  display: flex;
+}
+
+footer > .hbaf_footTop > div {
+  padding : 20px;
+}
+footer > .hbaf_footBtm {
+  display: inline-block;
   padding: 20px;
 }
 
+footer h2 {
+  font-size: 2em;
+}
+footer > .hbaf_logo {
+  /* display: inline-block; */
+  position:relative;
+  top: 0;
+  /* background-color: #F9A71A; */
+  text-align: end;
+}
+footer > .hbaf_logo > .sns {
+  padding-right: 30px;
+}
