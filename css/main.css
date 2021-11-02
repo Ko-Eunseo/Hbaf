@@ -430,8 +430,8 @@ div.productLayout > ul {
   section#product > div.product:after {
     display: none;
   }
-  section#product > div > div.swiper-button-prev,
-  section#product > div > div.swiper-button-next {
+  div.swiper-button-prev,
+  div.swiper-button-next {
   display: none;
   }
   section#product > div.product > .swiper-container {
