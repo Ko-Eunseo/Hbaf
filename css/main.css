@@ -490,7 +490,7 @@ div.productLayout > ul { position: relative;}
   /* 메뉴토클버튼open */
   #login > a.toggle { display: inline-block; }
   /* main cover ad 짤림 방지 */
-  #cover > ul { margin-top: 70px; }
+  #cover > ul { margin-top: 70px; } 
 
   /* monToSunAd */
   #advertise { position: relative; }
