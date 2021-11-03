@@ -59,7 +59,7 @@ var slElementList = document.querySelectorAll('.sl');
 var slFunc = function() {
   for (var element of slElementList) {
     if (!element.classList.contains('show')) { //sl요소가 .show를포함하지 않으면(보이지 않으면) 실행
-      if (window.innerHeight > element.getBoundingClientRect().top + slTriggerMargin) {
+      if (window.innerHeight > element.getBoundingClientRect().top + slTriggerMargin) { //getBoundingClientRect() 요소의 위치 값
         element.classList.add('show');
       }
     }
@@ -68,7 +68,3 @@ var slFunc = function() {
 
 window.addEventListener('load', slFunc);
 window.addEventListener('scroll', slFunc);
-
-//getBoundingClientRect() 요소의 위치 값
-//(offsetTop: relative 적용 대상으로부터 얼마나 떨어져있는가)
-//절대좌표 값: 문서로부터 얼마나 떨어져있는가
