@@ -282,10 +282,6 @@ section.event {
   display: inline-block;
 }
 
-/* product pagination */
-/* #product .swiper-pagination-fraction, 
-#product  .swiper-pagination-custom,  */
-
 #product .swiper-container-horizontal > .swiper-pagination-bullets {
   top: auto;
   bottom: -50px;
