@@ -196,6 +196,18 @@ section > div.product > nav.productNav > ul > li:last-child {
   position: relative;
   top: -30px;
 }
+#product .swiper-pagination-bullet:nth-child(1) { 
+  border: 3px solid #FFBC03;
+  background-color: #FFBC03; 
+}
+#product .swiper-pagination-bullet:nth-child(2) { 
+  border: 3px solid #3AA95A;
+  background-color: #3AA95A; 
+}
+#product .swiper-pagination-bullet:nth-child(3) { 
+  border: 3px solid #01826C;
+  background-color: #01826C; 
+}
 
 /* newProduct */
 section.newProduct.swiper-container {
