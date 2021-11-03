@@ -10,7 +10,6 @@ body, h1, h2, h3, h4, ul, li, a, p, span {
 
 body {
   width: 100%;
-  background-color: #F0EDE6;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -241,7 +240,9 @@ main > ul > li > div > iframe {
   z-index: -3;
   top: 0;
 }
-
+#advertise { 
+  background-color: #F0EDE6;
+}
 /* monToSunAd headline effect */
 #monToSunAd > h1 > p:nth-child(2),
 #monToSunAd > h1 > p:nth-child(3) { line-height: 1.5; }
