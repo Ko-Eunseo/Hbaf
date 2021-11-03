@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./library/fontawesome-free-5.15.4-web/css/all.min.css">
   <link rel="stylesheet" href="./css/swiper.css">
+  <link rel="stylesheet" href="./node_modules/animate.css/">
 </head>
 <body>
   <header class="header">
@@ -24,10 +25,10 @@
       </ul>
     </nav>
     <div id="login">
-      <a class="toggle" href="#"><i class="fas fa-bars fa-2x"></i></a>
-      <a class="user" href="login.html"><i class="fas fa-user fa-2x"></i></a>
+      <a class="toggle" href="#"><i class="fas fa-bars fa-lg"></i></a>
+      <a class="user" href="./pages/login.html"><i class="fas fa-user fa-lg"></i></a>
       <div class="searchBox">
-        <a class="search" href="#"><i class="fas fa-search fa-2x"></i></a>
+        <a class="search" href="#"><i class="fas fa-search fa-lg"></i></a>
         <label for="search">
           <input id="search" class="searchActive" type="search">
         </label>
@@ -35,7 +36,7 @@
     </div>
   </header>
   <main id="cover" class="swiper-container cover">    
-    <div id="adControls">
+    <div id="adControls" class="sl sl-up">
       <h1>나의 베프, 바프</h1>
       <p>H는 묵음이야</p>
     </div>
@@ -77,20 +78,20 @@
     <div class="swiper-pagination widgetPage"></div>
     <div id="monToSunAd">
       <iframe src="https://www.youtube.com/embed/l9OWWf1kPYQ?controls=0&mute=1&rel=0&disablekb=1" style="border:0;" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <h1>
-        <span>언제</span>
-        <br /><span class="blink">어디서나</span>
-        <br /><span>바프 &nbsp;와
+      <div>
+        <p class="sl sl-right">언제</p>
+        <p class="sl sl-left">어디서나</p>
+        <p class="blink">바프 &nbsp;와
           <br /> 함께
-        </span>
-      </h1>
+        </p>
+      </div>
     </div>
   </section>
   <section id="product">
     <div class="product">
       <nav class="listPosition productNav">
-        <h1>H는 묵음이야</h1>
-        <ul>
+        <h1 class="sl sl-up">H는 묵음이야</h1>
+        <ul class="sl sl-up">
           <li><a href="#">전체상품</a></li>
           <li><a href="#">먼투썬</a></li>
           <li><a href="#">세트</a></li>
@@ -100,58 +101,85 @@
       <div class="swiper-container total">
         <ul class="swiper-wrapper">
           <li class="swiper-slide">
-            <a href="./shopping.html">
-              <img class="productPic" src="./images/product/honeyCut.png" alt="">
-              <div>
-                <p>허니버터아몬드</p>
-                <p>3500원</p>
-              </div>
+            <a href="./pages/shopping/shopping_honey.html">
+              <img class="productPic" src="./images/product/honeyCut.png" alt="honey">
             </a>
+            <div>
+              <p>허니버터아몬드</p>
+              <p>3500원</p>
+            </div>
           </li>
           <li class="swiper-slide">
-            <a href="#">
-              <img class="productPic" src="./images/product/cornCut.png" alt="">
-              <div>
-                <p>군옥수수맛아몬드</p>
-                <p>3500원</p>
-              </div>
+            <a href="./pages/shopping/shopping_corn.html">
+              <img class="productPic" src="./images/product/cornCut.png" alt="corn">
             </a>
+            <div>
+              <p>군옥수수맛아몬드</p>
+              <p>3500원</p>
+            </div>
           </li>
           <li class="swiper-slide">
-            <a href="#">
-              <img class="productPic" src="./images/product/dduckCut.png" alt="">
-              <div>
-                <p>떡볶이맛아몬드</p>
-                <p>3500원</p>
-              </div>
+            <a href="./pages/shopping/shopping_dduck.html">
+              <img class="productPic" src="./images/product/dduckCut.png" alt="dduck">
             </a>
+            <div>
+              <p>떡볶이맛아몬드</p>
+              <p>3500원</p>
+            </div>
           </li>
           <li class="swiper-slide">
-            <a href="#">
-              <img class="productPic" src="./images/product/fireCut.png" alt="">
-              <div>
-                <p>불닭맛아몬드</p>
-                <p>3500원</p>
-              </div>
+            <a href="./pages/shopping/shopping_spicy.html">
+              <img class="productPic" src="./images/product/fireCut.png" alt="spicy">
             </a>
+            <div>
+              <p>불닭맛아몬드</p>
+              <p>3500원</p>
+            </div>
           </li>
           <li class="swiper-slide">
-            <a href="#">
-              <img class="productPic" src="./images/product/garlicCut.png" alt="">
-              <div>
-                <p>마늘빵아몬드</p>
-                <p>3500원</p>
-              </div>
+            <a href="./pages/shopping/shopping_garlic.html">
+              <img class="productPic" src="./images/product/garlicCut.png" alt="garlic">
             </a>
+            <div>
+              <p>마늘빵아몬드</p>
+              <p>3500원</p>
+            </div>
           </li>
           <li class="swiper-slide">
-            <a href="#">
-              <img class="productPic" src="./images/product/mayoCut.png" alt="">
-              <div>
-                <p>청양마요아몬드</p>
-                <p>3500원</p>
-              </div>
+            <a href="./pages/shopping/shopping_mayo.html">
+              <img class="productPic" src="./images/product/mayoCut.png" alt="mayo">
             </a>
+            <div>
+              <p>청양마요아몬드</p>
+              <p>3500원</p>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <a href="./pages/shopping/shopping_wasa.html">
+              <img class="productPic" src="./images/product/wasaCut.png" alt="wasa">
+            </a>
+            <div>
+              <p>와사비맛아몬드</p>
+              <p>3500원</p>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <a href="./pages/shopping/shopping_tiramisu.html">
+              <img class="productPic" src="./images/product/tiramisuCut.png" alt="tiramisu">
+            </a>
+            <div>
+              <p>티라미수맛아몬드</p>
+              <p>3500원</p>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <a href="./pages/shopping/shopping_caramel.html">
+              <img class="productPic" src="./images/product/caramelCut.png" alt="caramel">
+            </a>
+            <div>
+              <p>카라멜아몬드&프레첼</p>
+              <p>3500원</p>
+            </div>
           </li>
         </ul>
         <div class="swiper-pagination totalPage"></div>
@@ -165,24 +193,33 @@
     </div>
   </section>
   <section id="newProduct" class="newProduct productLayout swiper-container">
-    <div>
-    <h1 class="listPosition">신메뉴 & 리뉴얼</h1>
-  </div>
+    <div class="listPosition">
+      <h1 class="sl sl-up">신메뉴 & 리뉴얼</h1>
+    </div>
     <ul class="swiper-wrapper scroll">
       <li class="swiper-slide">
-        <a href="#">
+        <a href="./pages/shopping/shopping_chick.html">
           <img class="newProductPic" src="./images/product/chickCut.png" alt="newProduct1">
         </a>
+        <div>
+          <p>구운양파&마늘빵 병아리콩</p>
+        </div>
       </li>
       <li class="swiper-slide">
-        <a href="#">
+        <a href="./pages/shopping/shopping_onion.html">
           <img class="newProductPic" src="./images/product/onionCut.png" alt="newProduct2">
         </a>
+        <div>
+        <p>구운양파아몬드</p>
+        </div>
       </li>
       <li class="swiper-slide">
-        <a href="#">
+        <a href="./pages/shopping/shopping_seaweed.html">
           <img class="newProductPic" src="./images/product/seaweedCut.png" alt="newProduct3">
         </a>
+        <div>
+          <p>김맛아몬드</p>
+        </div>
       </li>
     </ul>
     <div class="swiper-scrollbar"></div>
@@ -199,7 +236,35 @@
     <div class="swiper-button-next"><i class="fas fa-chevron-circle-right"></i></div>
   </section>
   <footer>
-    <div>copyrightⓒeunseogo</div>
+    <div class="hbaf_footTop">
+      <div>
+        <h2>HBAF</h2>
+        <span>(주)길림양행 온라인 공식 판매처 "HBAF 홈페이지"입니다.</span>
+      </div>
+      <div class="footTop_cs">
+        <h3>고객센터</h3>
+        <h4>031-768-3443</h4>
+        <span>09:00~18:00 Lunch time 12:00~01:00
+          <br/>토, 일요일 및 공휴일 휴무
+        </span>
+      </div>      
+    </div>
+    <div class="hbaf_footBtm">
+      <h3>사업자정보</h3>
+      <span>상호명: (주)길림양행 대표자: 윤태원 통신판매업번호: 2011-경기광주-0314
+        사업자등록번호: 2148174376</span><br/>
+      <address>사업장 소재지: 경기 광주시 오포읍 문형리 27-16 (우: 464-894)</address>
+      <span>e-mail: hbaf@hbaf.co.kr</span>
+    </div>
+    <div class="hbaf_logo">
+      <img src="./images/logo.svg" alt="logo">
+      <div class="sns">
+        <a href="https://instagram.com/hbafstore" target="_blank">
+        <i class="fab fa-instagram"></i>
+        Hbaf_official
+        </a>
+      </div>
+    </div>
   </footer>
 
   <script src="https://player.vimeo.com/api/player.js"></script>

@@ -2,15 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 /* 초기화 */
-body, h1, ul, li, a, p, span {
+body, h1, h2, h3, h4, ul, li, a, p, span {
   padding: 0;
   margin: 0;
   list-style: none;
-}
+} 
 
 body {
   width: 100%;
-  background-color: #F0EDE6;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -19,42 +18,22 @@ a {
   color: inherit;
 }
 
-html{
-	scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 /* font */
-h1 {
-  font-size: 3em;
-}
-
-p, li {
-  font-size: 1.5em;
-}
+h1 { font-size: 3em;}
+main p { font-size: 1.5em;}
+li { font-size: 1.2em;}
 
 /* section padding */
-section {
-  padding: 10% 0;
-}
-.event {
-  padding-top: 0;
-}
+section { padding: 10% 0;}
+.event { padding-top: 0;}
 
 /* first section */
 .section:first-child {
   background-color: black;
   position: relative;
   overflow: hidden;
-}
-
-/* logo */
-main {
-  width: 100%;
-  color: white;
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 /* header fixed */
@@ -79,7 +58,7 @@ header > #logo {
   display: inline-block;
   width: 100px;
   height: 45px;
-  text-indent: 99999999999px;
+  text-indent: 9999999px;
   z-index: 3;
 }
 
@@ -111,20 +90,16 @@ header li.bar:after {
   width: 10px;
   border-right: 1px solid #F0EDE6;
   transform: translate(-50%,-50%);
-
   padding: 0 30px;
-  /* position: absolute; */
 }
 
 /* gnb hover */
 #gnb > ul > li:hover > a {
-  padding-bottom: 21px;
+  padding-bottom: 25px;
   border-bottom: 3px solid #F9A71A;
   color: #F9A71A;
 }
-#login a:hover {
-  color: #F9A71A;
-}
+#login a:hover { color: #F9A71A;}
 
 /* gnb dropdown */
 #gnb.dropdowncontainer {
@@ -151,9 +126,7 @@ header li.bar:after {
 }
 
 /* toggle active시 loginBox 위치 고정 */
-#gnb.dropdowncontainer + #login {
-  top: 30px;
-}
+#gnb.dropdowncontainer + #login { top: 30px;}
 #gnb > ul.dropdown > li:hover {
   background-color: #FED500;
   transition: 0.5s;
@@ -167,10 +140,11 @@ header > #login {
   transform: translate(0%,-50%);
   z-index: 5;
   display: flex;
+  align-items: baseline; /* search 활성화시 user icon 밀림현상 방지 */
 }
 
 header > #login a {
-  margin: 0 15px;
+  margin: 0 10px;
   position: relative;
 }
 
@@ -179,7 +153,6 @@ header > #login a {
   content: '';
   background-color: #FED500;
   display: inline-block;
-
   border-radius: 100%;
   width: 45px;
   height: 45px;
@@ -191,21 +164,27 @@ header > #login a {
 }
 
 /* 메뉴 반응형 active */
-#login > a.toggle {
-  display: none;
-}
+#login > a.toggle { display: none;}
 
 /* search bar */
 input.searchActive {
   top: 0;
   right: 0;
   display: none;
-
-  padding: 15px;
+  padding: 10px;
   width: 20vw;
   border-radius: 30px;
   border: none;
   z-index: -1;
+}
+
+main {
+  width: 100%;
+  color: white;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 /* adControls */
@@ -219,7 +198,7 @@ main > #adControls {
 .swiper-pagination-fraction, 
 .swiper-pagination-custom, 
 .swiper-container-horizontal > .swiper-pagination-bullets {
-  top: 70%;
+  top: 71%;
   left: 10%;
   text-align: left;
 }
@@ -238,11 +217,20 @@ main > ul > li > div > iframe {
   z-index: -3;
   top: 0;
 }
+#advertise { background-color: #F0EDE6;}
+/* monToSunAd headline effect */
+#monToSunAd > div > p:nth-child(2),
+#monToSunAd > div > p:nth-child(3) { line-height: 1.5; }
+
+.sl { opacity: 0; transition: all .5s ease;}
+/*트랜지션 효과 위해 블록으로 변경. 인라인은 안됨*/
+.sl-right { transform: translate(-100px, 0); display: block; } 
+.sl-left { transform: translate(100px, 0); display: block; } 
+.sl-up { transform: translate(0, 100px); display: block; } 
+.sl.show { opacity: 1; transform: none; }
 
 /* 섹션높이 고정 */
-#product {
-  padding: 100px 0;
-}
+#product { padding: 100px 0;}
 
 /* common product picture */
 .productPic {
@@ -257,88 +245,74 @@ main > ul > li > div > iframe {
   overflow: hidden;
 }
 #newProduct,
-section.event {
-  background-color: white;
-}
-#newProduct .swiper-wrapper {
-  cursor: grab;
-}
+section.event { background-color: white;}
+#newProduct .swiper-wrapper { cursor: grab;}
 
 #product > div > nav.listPosition > ul {
   text-align: center;
   display: inline-block;
 }
 
-/* product pagination */
-/* #product .swiper-pagination-fraction, 
-#product  .swiper-pagination-custom,  */
-
 #product .swiper-container-horizontal > .swiper-pagination-bullets {
   top: auto;
-  bottom: -30px;
+  bottom: -50px;
   left: 0;
 }
 .swiper-pagination.totalPage {
   text-align: center;
   position:static;
 }
-#product .swiper-pagination-bullet {
-  border: 3px solid #F9A71A;
-}
-
-/* active cursor */
-#product > div > div.swiper-container.total > div > span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  width: 12px;
-  background-color: #F9A71A;
-}
 
 /* 페이지네이션 짤림 방지 */
-.swiper-pagination.totalPage {
-  position: absolute;
-}
-li.swiper-slide {
-  z-index: 10;
-}
+.swiper-pagination.totalPage { position: absolute;}
+li.swiper-slide { z-index: 10;}
 /* slide button */
 .swiper-button-prev,
 .swiper-button-next{
   margin: 0 3%;
   font-size: 50px;
   position: relative;
-
   /* 배경비침 방지 */
   background-color: #F0EDE6;
-
   /* 백그라운드 삐져나옴 방지 */
   border-radius: 100%;
   z-index: 5;
 }
 
 .swiper-button-prev > i,
-.swiper-button-next > i {
-  color:#FED500;
-}
+.swiper-button-next > i { color:#FED500; }
 
 .swiper-button-prev:after,
-.swiper-button-next:after {
-  display: none;
-}
+.swiper-button-next:after { display: none; }
+
 /* newproduct */
-#newProduct > div {
-  text-align: center;
-}
+#newProduct > div { text-align: center; }
 
 /* event */
-section.event > ul > li > a > img {
-  width: 100%;
-}
+section.event > ul > li > a > img { width: 100%; }
 
 /* footer */
 footer {
   background-color: black;
-  color: white;
-  height: 200px;
-  text-align: center;
+  color: #aaaaaa;
+  padding: 50px;
+}
+
+footer > .hbaf_footTop {
+  display: inline-block;
+  display: flex;
+}
+
+footer > .hbaf_footTop > div { padding : 20px; }
+footer > .hbaf_footBtm {
+  display: inline-block;
   padding: 20px;
 }
 
+footer h2 { font-size: 2em; }
+footer > .hbaf_logo {
+  position:relative;
+  top: 0;
+  text-align: end;
+}
+footer > .hbaf_logo > .sns { padding-right: 30px; }
