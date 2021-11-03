@@ -21,7 +21,6 @@
     border-radius: 30px;
     display: inline-block;
     padding: 50px;
-    /* text-align: center; 모두 가운데정렬 */
     background-color: #F0EDE6;
     width: 500px;
   }
@@ -31,7 +30,6 @@
   #login > .loginBox > h2 {
     margin-bottom: 20px;
     border-bottom: 4px solid #FEDA00;
-    /* display: inline-block; */
     text-align: center;
   }
 
