@@ -219,8 +219,8 @@ main > ul > li > div > iframe {
 }
 #advertise { background-color: #F0EDE6;}
 /* monToSunAd headline effect */
-#monToSunAd > h1 > p:nth-child(2),
-#monToSunAd > h1 > p:nth-child(3) { line-height: 1.5; }
+#monToSunAd > div > p:nth-child(2),
+#monToSunAd > div > p:nth-child(3) { line-height: 1.5; }
 
 .sl { opacity: 0; transition: all .5s ease;}
 /*트랜지션 효과 위해 블록으로 변경. 인라인은 안됨*/

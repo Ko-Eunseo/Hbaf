@@ -41,7 +41,7 @@
 }
 #advertise > div.widget > a > div:hover > img { transform: scale(1.2);}
 section > #monToSunAd { overflow: hidden;}
-section > #monToSunAd > h1 {
+section > #monToSunAd > div {
   text-align: right;
   font-size: 3em;
   font-weight:900;
@@ -59,12 +59,12 @@ section > #monToSunAd > iframe {
 }
 
 /* section2 heading */
-#monToSunAd > h1 > p:first-child { color: #F9A71A; }
-#monToSunAd > h1 > p:nth-of-type(2) { color: #9FBE25; }
-#monToSunAd > h1 > p:nth-of-type(3) { position: relative; }
+#monToSunAd > div > p:first-child { color: #F9A71A; }
+#monToSunAd > div > p:nth-of-type(2) { color: #9FBE25; }
+#monToSunAd > div > p:nth-of-type(3) { position: relative; }
 
 /* 깜빡임 효과 */
-#monToSunAd > h1 > p:nth-of-type(3):before {
+#monToSunAd > div > p:nth-of-type(3):before {
   content: ' ';
   height: 1em;
   border-left: 5px solid black;
@@ -76,8 +76,8 @@ section > #monToSunAd > iframe {
 }
 
 /* 검색창 효과 */
-#monToSunAd > h1 > .blink { z-index: 5;}
-#monToSunAd > h1 > p:nth-of-type(3):after {
+#monToSunAd > div > .blink { z-index: 5;}
+#monToSunAd > div > p:nth-of-type(3):after {
   content: ' ';
   height: 1.5em;
   width: 120px;
@@ -228,7 +228,7 @@ div.productLayout > ul { position: relative;}
   /* font */
   h1 { font-size: 7vw; }
   #product ul { font-size: 2vw; }
-  section > #monToSunAd > h1 { font-size: 5vw; }
+  section > #monToSunAd > div { font-size: 5vw; }
   .total p, #newProduct > ul > li > a > div > p { font-size: 1em; }
   #advertise > div.widget > a > div > p { font-size: 14px; }
 
@@ -239,7 +239,7 @@ div.productLayout > ul { position: relative;}
     height: auto;
   }  
 
-  #monToSunAd > h1 > p:nth-of-type(3):after { width: 50px; }
+  #monToSunAd > div > p:nth-of-type(3):after { width: 50px; }
   
   /* h1 position */
   .listPosition { left: 30vw; }
@@ -274,8 +274,8 @@ div.productLayout > ul { position: relative;}
     width: 100%;
     float: none;
   }  
-  #monToSunAd > h1 {
-    position:absolute;
+  #monToSunAd > div {
+    position: absolute;
     top: 35vw;
     left: 55vw;
     text-align: left;
@@ -322,7 +322,7 @@ div.productLayout > ul { position: relative;}
   /* font */
   h1 { font-size: 6vw; }
   #product ul { font-size: 2vw; }
-  section > #monToSunAd > h1 { font-size: 5vw; }
+  section > #monToSunAd > div { font-size: 5vw; }
   #newProduct > ul > li > div {  font-size: 1vw; }
   .total p, #newProduct > ul > li > a > div > p { font-size: 1em; }
 
@@ -353,13 +353,13 @@ div.productLayout > ul { position: relative;}
     width: 100%;
     float: none;
   }  
-  #monToSunAd > h1 {
+  #monToSunAd > div {
     position:absolute;
     top: 35vw;
     left: 55vw;
     text-align: left;
   }
-  #monToSunAd > h1 > p:nth-of-type(3):after { width: 15vw; }
+  #monToSunAd > div > p:nth-of-type(3):after { width: 15vw; }
 
   section#product > div.product:after { display: none; }
   div.swiper-button-prev,
@@ -402,7 +402,7 @@ div.productLayout > ul { position: relative;}
   /* font */
   h1 { font-size: 5vw; }
   #product ul { font-size: 2vw; }
-  section > #monToSunAd > h1 { font-size: 5vw; }
+  section > #monToSunAd > div { font-size: 5vw; }
 
   header { background-color: #F9A71A; }
 
@@ -453,8 +453,8 @@ div.productLayout > ul { position: relative;}
     bottom: 15%;
     left: 45vw;
   }
-  #advertise > #monToSunAd > h1 { text-align: left; }
-  #monToSunAd > h1 > p:nth-of-type(3):after { width: 13vw; }
+  #advertise > #monToSunAd > div { text-align: left; }
+  #monToSunAd > div > p:nth-of-type(3):after { width: 13vw; }
 
   section#product > div.product:after {
     background-size: 100vh;
@@ -506,9 +506,9 @@ div.productLayout > ul { position: relative;}
     height: 250px;
   }
   /* headline position */
-  #advertise > #monToSunAd > h1 { margin-bottom: 50px; }
-  #advertise > #monToSunAd > h1 { text-align: left; }
-  #advertise > #monToSunAd > h1 p br { display: none; }
+  #advertise > #monToSunAd > div { margin-bottom: 50px; }
+  #advertise > #monToSunAd > div { text-align: left; }
+  #advertise > #monToSunAd > div p br { display: none; }
 
   #monToSunAd {
     display: inline-block;
