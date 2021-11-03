@@ -27,7 +27,7 @@ html{
 h1 {
   font-size: 3em;
 }
-p {
+main p {
   font-size: 1.5em;
 }
 li {
@@ -241,6 +241,16 @@ main > ul > li > div > iframe {
   z-index: -3;
   top: 0;
 }
+
+/* monToSunAd headline effect */
+#monToSunAd > h1 > p:nth-child(2),
+#monToSunAd > h1 > p:nth-child(3) { line-height: 1.5; }
+
+.sl { opacity: 0; transition: all .5s ease;}
+.sl-right { transform: translate(-100px, 0); display: block; } /*트랜지션 효과 위해 블록으로 변경. 인라인이라 안됨*/
+.sl-left { transform: translate(100px, 0); display: block; } 
+.sl-up { transform: translate(0, 100px); display: block; } 
+.sl.show { opacity: 1; transform: none; }
 
 /* 섹션높이 고정 */
 #product {
