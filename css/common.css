@@ -222,7 +222,7 @@ main > #adControls {
 .swiper-pagination-fraction, 
 .swiper-pagination-custom, 
 .swiper-container-horizontal > .swiper-pagination-bullets {
-  top: 70%;
+  top: 71%;
   left: 10%;
   text-align: left;
 }
@@ -288,21 +288,12 @@ section.event {
 
 #product .swiper-container-horizontal > .swiper-pagination-bullets {
   top: auto;
-  bottom: -30px;
+  bottom: -50px;
   left: 0;
 }
 .swiper-pagination.totalPage {
   text-align: center;
   position:static;
-}
-#product .swiper-pagination-bullet {
-  border: 3px solid #F9A71A;
-}
-
-/* active cursor */
-#product > div > div.swiper-container.total > div > span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  width: 12px;
-  background-color: #F9A71A;
 }
 
 /* 페이지네이션 짤림 방지 */
